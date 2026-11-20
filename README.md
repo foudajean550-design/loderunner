@@ -4,6 +4,14 @@
 
 Jeu de plateforme 2D inspiré de Lode Runner, développé en **Java 21** avec **JavaFX**. Le joueur collecte des lingots, évite des adversaires pilotés par une IA et creuse des briques pour leur échapper.
 
+## Jouer dans le navigateur
+
+[![Ouvrir dans GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?repo=foudajean550-design/loderunner)
+
+Cliquez sur le bouton pour créer un Codespace. L’environnement installe Java et Maven, compile le jeu et lance son interface dans un bureau Linux distant. Le port du jeu s’ouvre dans le navigateur via noVNC : aucune installation locale n’est nécessaire. Si le jeu ne s’ouvre pas automatiquement, ouvrez le port **6080** dans l’onglet **Ports** du Codespace.
+
+> GitHub Codespaces demande une connexion GitHub et peut être soumis à des limites d’utilisation ou à une facturation. Gardez le port 6080 privé : il donne accès à la session graphique du jeu.
+
 ## Fonctionnalités
 
 - Quatre cartes générées et choisies au début de chaque partie.
@@ -33,7 +41,7 @@ Le moteur et les modèles sont séparés de l’interface, ce qui facilite leur 
 - JDK 21
 - Maven 3.9+
 
-## Lancer et tester
+## Lancer et tester en local
 
 ```bash
 mvn clean verify

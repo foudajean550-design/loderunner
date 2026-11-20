@@ -1,0 +1,16 @@
+{
+  "name": "Lode Runner — jeu dans le navigateur",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "forwardPorts": [6080],
+  "portsAttributes": {
+    "6080": {
+      "label": "Lode Runner (noVNC)",
+      "onAutoForward": "openBrowser",
+      "protocol": "http"
+    }
+  },
+  "postCreateCommand": "mvn --batch-mode verify",
+  "postStartCommand": "bash .devcontainer/start-game.sh"
+}
